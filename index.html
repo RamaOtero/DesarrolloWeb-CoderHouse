@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,600;1,300&family=Teko:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Fix Tech LP</title>
 </head>
 <body>
   <header class="header">
-        <img class="header__logo" src="./Assets/Logo2.png" alt="Logo Fix Tech Lp">
+        <img class="header__logo" src="./Assets/Logo2.png" alt="Logo Fix Tech Lp" data-aos="flip-left">
       <nav class="header__nav">
           <ul class="header__list">
               <li class="header__item"><a href="./index.html"><span>INICIO</span></a></li>
@@ -29,11 +30,11 @@
   </header>
   <main class="main">
       <div class="main__imagen">
-          <span>" EL MEJOR TRATAMIENTO, PARA EL MEJOR RENDIMIENTO "</span>
+          <span data-aos="fade-up">" EL MEJOR TRATAMIENTO, PARA EL MEJOR RENDIMIENTO "</span>
       </div>
   <div class="main__frase">
-        <span class="main__frase--grande">SERVICIO TÉCNICO DE NOTEBOOK Y PC</span>
-        <span class="main__frase--italica">OFRECEMOS CALIDAD Y COMPROMISO</span>
+        <span class="main__frase--grande slide-in-top" data-aos="fade-right">SERVICIO TÉCNICO DE NOTEBOOK Y PC</span>
+        <span class="main__frase--italica" data-aos="fade-right">OFRECEMOS CALIDAD Y COMPROMISO</span>
   </div>
   <section class="main__secciones">
       <a href="./Secciones/SERVICIOS.html">LIMPIEZA DE GABINETE Y COMPONENTES</a>
@@ -66,6 +67,10 @@
   </main>
   <footer class="footer"> <!-- Links de Redes sociales y Whatsapp -->
       <p class="footer__frase">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, nam!</p>
-  </footer> 
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> 
 </body>
 </html>
