@@ -47,7 +47,7 @@ a {
 .main__imagen {
     position: relative;
     display: flex;
-    background-image: url(../Assets/Fondo\ index.jpg);
+    background-image: url(../Assets/Fondoindex.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;

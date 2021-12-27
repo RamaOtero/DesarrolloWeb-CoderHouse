@@ -44,7 +44,7 @@ a {
 }
 .main__imagen {
     display: flex;
-    background-image: url(../Assets/fondo\ productos.jpg);
+    background-image: url(../Assets/fondoproductos.jpg);
     background-size: 200%;
     background-position: center;
     background-repeat: no-repeat;
