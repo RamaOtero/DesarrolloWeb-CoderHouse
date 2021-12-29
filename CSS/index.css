@@ -111,9 +111,6 @@ a {
     flex-wrap: wrap-reverse;
     justify-content: center;
 }
-.main__mapa p {
-    
-}
 .main__form {
     background-color: white;
     border-radius: 8px;
@@ -174,8 +171,8 @@ a {
     .main__secciones {
     padding: 0px;
     justify-content: center;
-    height: 300px;
-    gap: 10px;
+    height: 400px;
+    align-items: center;
     }
     .main__secciones a {
     font-size: 1.5rem;
@@ -189,5 +186,9 @@ a {
     .main__imagen span {
     font-size: 1.5rem;
     margin: 5px;
+    }
+    .footer__frase {
+        
+        font-size: 0.8rem;
     }
 }
