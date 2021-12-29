@@ -157,13 +157,8 @@ a {
     font-family: 'Kanit', sans-serif;
     font-style: italic;
 }
-
-/* EFECTOS */
-
-  
-
+/*  EFECTOS  */
 /*     MEDIA QUERIES    */
-
 @media screen and (max-width:768px) {
     
     .header, .header__list {
