@@ -54,27 +54,12 @@ a {
 .main__grid {
     background-color: black;
     display: grid;
-    grid-template-areas: "busqueda busqueda busqueda"
-                         "imagen imagen imagen"
-                         "imagen2 imagen2 imagen2";
-    grid-template-rows:  1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: auto ;
     row-gap: 30px;
     column-gap: 30px;
     padding: 80px;
-    flex-wrap: wrap;
-}
-.busqueda {
-    grid-area: busqueda;
-}
-.imagenp {
-    grid-area: imagen;
-}
-.imagenp2{
-    grid-area: imagen2;
-}
-.busqueda {
-    grid-area: busqueda;
+    place-items: center;
 }
 .main__mapa {
     display: flex;
