@@ -87,7 +87,7 @@ a {
     background-size: 200%;
     background-position: left;
     justify-content: space-between;
-    
+    align-items: center;
 }
 .main__secciones a {
     color: white;
