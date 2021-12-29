@@ -43,35 +43,38 @@ a {
     display: none;
 }
 .main__imagen {
-    display: flex;
-    background-image: url(../Assets/fondoproductos.jpg);
-    background-size: 200%;
-    background-position: center;
-    background-repeat: no-repeat;
+    
     justify-content: center;
     align-items: center;
     font-family: 'Bebas Neue', cursive;
     color: white;
     font-size: 2.5rem;
-    flex-direction: column;
-    padding: 80px;
-}
-.carrousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
     
 }
 .main__grid {
     background-color: black;
     display: grid;
-    grid-template-columns: repeat(3,1fr) ;
-    grid-template-rows: auto ;
+    grid-template-areas: "busqueda busqueda busqueda"
+                         "imagen imagen imagen"
+                         "imagen2 imagen2 imagen2";
+    grid-template-rows: 50px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 30px;
     column-gap: 30px;
     padding: 80px;
-    place-items: center;
+    flex-wrap: wrap;
+}
+.busqueda {
+    grid-area: busqueda;
+}
+.imagenp {
+    grid-area: imagen;
+}
+.imagenp2{
+    grid-area: imagen2;
+}
+.busqueda {
+    grid-area: busqueda;
 }
 .main__mapa {
     display: flex;
