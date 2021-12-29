@@ -56,6 +56,13 @@ a {
     flex-direction: column;
     padding: 80px;
 }
+.carrousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    
+}
 .main__grid {
     background-color: black;
     display: grid;
