@@ -101,7 +101,9 @@ a {
     background: white;
     color: black;
 }
-
+.main__iframe {
+    margin-top: 20px;
+}
 .main__mapa {
     display: flex;
     flex-direction: row;
