@@ -58,6 +58,21 @@ a {
     flex-direction: column;
     padding: 80px;
     }
+    .main__trabajos {
+        background-color: black;
+        display: grid;
+        grid-template-columns: 75vw;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+        row-gap: 40px;
+        padding: 30px 0px;
+    }
+    .main__trabajos div p {
+        color: white;
+        font-size: 1.2rem;
+        border-left: 2px solid rgb(33, 33, 109);
+        padding-left: 10px;
+    }
    .main__mapa {
         display: flex;
         flex-direction: row;
