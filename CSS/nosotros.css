@@ -58,6 +58,41 @@ a {
     flex-direction: column;
     padding: 80px;
     }
+    .main_frase {
+        background-color: #000;
+        display: flex;
+        padding: 40px 40px;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Kanit', sans-serif;
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: 300;
+        color: white;
+    }
+   .main__texto {
+       padding: 20px 80px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       font-size: 1.5rem;
+       font-family: 'Kanit', sans-serif;
+   } 
+   .main__grid {
+       display: grid;
+       background-color: black;
+       grid-template-columns: auto auto;
+       grid-template-rows: auto auto;
+       justify-content: space-around;
+       gap: 20px;
+       padding: 40px;
+   }
+   .main__grid div span {
+       color: white;
+       font-size: 1.2rem;
+       border-left: 2px solid yellow;
+       padding-left: 10px;
+   }
    .main__mapa {
         display: flex;
         flex-direction: row;
@@ -126,5 +161,16 @@ a {
     .main__imagen span {
         font-size: 1.5rem;
         margin: 5px;
+    }
+    .main__frase span {
+        font-size: 20px;
+    }
+    .main__grid {
+        grid-template-columns: auto;
+    }
+    .main__texto{
+        font-size: 1rem;
+        padding: 20px 30px;
+        text-align: center;
     }
     }
