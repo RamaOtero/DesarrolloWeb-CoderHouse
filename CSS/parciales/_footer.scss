@@ -1,0 +1,12 @@
+@import "./variables";
+.footer__frase {
+    display: flex;
+    background-color: black;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color: $blanco;
+    font-size: 1.3rem;
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+}

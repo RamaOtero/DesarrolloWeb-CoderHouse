@@ -1,0 +1,21 @@
+{
+  "name": "coderproyecto",
+  "version": "1.0.0",
+  "description": "PaqueteSass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --inclued-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamaOtero/CoderProyecto.git"
+  },
+  "author": "Ramiro Otero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RamaOtero/CoderProyecto/issues"
+  },
+  "homepage": "https://github.com/RamaOtero/CoderProyecto#readme"
+}
