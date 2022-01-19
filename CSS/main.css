@@ -86,6 +86,9 @@ a {
   font-size: 1.3rem;
   font-family: 'Kanit', sans-serif;
   font-style: italic; }
+  @media screen and (max-width: 768px) {
+    .footer__frase {
+      background-color: grey; } }
 
 .main__imagen {
   position: relative;
@@ -98,9 +101,8 @@ a {
   align-items: center;
   font-family: 'Bebas Neue', cursive;
   color: white;
-  font-size: 2.5rem; }
-  .main__imagen span {
-    margin: 80px; }
+  font-size: 2.5rem .main__imagen span;
+    font-size-margin: 80px; }
 
 .main__frase {
   display: flex;

@@ -1,4 +1,6 @@
 @import "./variables";
+@import "./mapa";
+@import "./mixins-responsive";
 .footer__frase {
     display: flex;
     background-color: black;
@@ -9,4 +11,7 @@
     font-size: 1.3rem;
     font-family: 'Kanit', sans-serif;
     font-style: italic;
+    @include tablet {
+        background-color: grey;
+    }
 }
