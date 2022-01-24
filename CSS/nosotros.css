@@ -51,19 +51,34 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     font-family: 'Bebas Neue', cursive;
     color:white;
     font-size: 2.5rem;
     flex-direction: column;
     padding: 80px;
     }
+    .main__imagen--btn {
+        border: 2px solid yellow;
+        border-radius: 50px;
+        padding: 1.5px 10px;
+        font-size: 1.7rem;
+        font-family:'Teko', sans-serif;
+        color: white;
+    }
+    .main__imagen--btn:hover {
+        background-color: rgba(255, 251, 0, 0.479);
+        color: white;
+        transition: 0.5s;
+    }
+    
     .main_frase {
         background-color: #000;
         display: flex;
         padding: 40px 40px;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         font-family: 'Kanit', sans-serif;
         font-size: 2rem;
         font-style: italic;
@@ -74,8 +89,10 @@ a {
        padding: 20px 80px;
        display: flex;
        flex-direction: column;
+       justify-content: center;
        align-items: center;
-       font-size: 1.5rem;
+       text-align: center;
+       font-size: 1.35rem;
        font-family: 'Kanit', sans-serif;
    } 
    .main__grid {

@@ -2,8 +2,7 @@
 @import "../CSS/parciales/header.scss";
 @import "../CSS/parciales/form.scss";
 @import "../CSS/parciales/footer.scss";
-@import "../CSS/parciales/mixins-responsive";
-
+@import "../CSS/parciales/mixins-responsive.scss";
 .main__imagen {
     position: relative;
     display: flex;
@@ -11,15 +10,14 @@
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    
     justify-content: center;
     align-items: center;
     font-family: 'Bebas Neue', cursive;
     color: white;
-    font-size: map-get($estilos, f25)
-    & span {
-        margin: 80px;
-    }
+    font-size: 2.5rem;
+        & span {
+            margin: 50px;
+        }
 }
 .main__frase {
     display: flex;
@@ -29,7 +27,7 @@
     align-items: center;
     font-family: 'Kanit', sans-serif;
     &--grande {
-        font-size: map-get($estilos, f25)
+        font-size: 2rem;
     }
     &--italica {
         font-size: 2rem;
@@ -48,6 +46,7 @@
     background-position: left;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     & a {
         color: white;
         font-size: 2.7rem;
@@ -62,3 +61,38 @@
     }
 }  
 
+
+@media screen and (max-width:768px) {
+    
+    .header, .header__list {
+    flex-direction: column;
+    }
+    .main__frase--grande{
+    font-size: 1rem;
+    }
+    .main__frase--italica {
+    font-size: 1rem;
+    }
+    .main__secciones {
+    padding: 0px;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+    }
+    .main__secciones a {
+    font-size: 1.5rem;
+    }
+    .main__imagen {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-size: 200%;
+    }
+    .main__imagen span {
+    font-size: 1.5rem;
+    margin: 5px;
+    }
+    .footer__frase {
+        font-size: 0.8rem;
+    }
+}

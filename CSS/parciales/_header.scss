@@ -1,16 +1,36 @@
 @import "./variables";
 @import "./mapa";
 @import "./mixins-responsive";
+
 .header {
     background-color: black;
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    &__logoynombre {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-wrap: wrap-reverse;
+    }
     &__logo {
          max-width: 100%;
-         width: 600px;
-         padding: 10px 40px 30px 10px;
+         width: 100px;
+         margin: 5px 20px 5px 0px ;   
+    }
+    &__nombre {
+        font-family: 'Orbitron', sans-serif;
+        margin-left: 20px;
+        font-size: 6rem;
+        font-weight: 900;
+        animation: fluido 30s ease-in-out infinite;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(255,255,255,0.65) 25%, rgba(0,0,0,1) 50%, rgba(255,255,255,0.6530987394957983) 75%, rgba(255,255,255,0) 100%);
+        background-size: 600%;
+        -webkit-background-clip: text;
+          background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     &__list {
         display: flex;
@@ -35,4 +55,46 @@
     &__servicios{
         display: none;
     }
+}
+@media screen and (max-width:320px) {  
+    .header__nombre {
+        font-size: 2rem;
+    }
+    .header__logo {
+        display: none;
+    } 
+    .header__nombreylogo {
+        padding: 0px;
+    }
+    
+}
+@media screen and (max-width:375px) {  
+    .header__nombre {
+    font-size: 2.5rem;
+    }
+    .header__logo {
+        display: none;
+    }  
+}
+@media screen and (max-width:424px) {  
+    .header__nombre {
+    font-size: 2.7rem;
+    }
+    .header__logo {
+        display: none;
+    }
+}
+@media screen and (max-width:767px) {
+    .header__nombre {
+        font-size: 5rem;
+        }
+        .header__logo {
+            margin: 0px;
+        }
+}
+
+@keyframes fluido {
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
 }
