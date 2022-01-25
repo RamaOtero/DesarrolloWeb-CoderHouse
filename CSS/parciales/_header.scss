@@ -56,7 +56,7 @@
         display: none;
     }
 }
-@media screen and (max-width:320px) {  
+@media screen and (min-width:320px) {  
     .header__nombre {
         font-size: 2rem;
     }
@@ -68,15 +68,17 @@
     }
     
 }
-@media screen and (max-width:375px) {  
+@media screen and (min-width:375px) {  
     .header__nombre {
     font-size: 2.5rem;
+    margin: 0px;
     }
     .header__logo {
         display: none;
-    }  
+    }
+    
 }
-@media screen and (max-width:424px) {  
+@media screen and (min-width:425px) {  
     .header__nombre {
     font-size: 2.7rem;
     }
@@ -84,12 +86,13 @@
         display: none;
     }
 }
-@media screen and (max-width:767px) {
+@media screen and (min-width:768px) {
     .header__nombre {
         font-size: 5rem;
         }
         .header__logo {
-            margin: 0px;
+            display: inline-block;
+            margin: 0px 10px 0px 0px;
         }
 }
 

@@ -55,7 +55,7 @@ a {
   .header__servicios {
     display: none; }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .header__nombre {
     font-size: 2rem; }
   .header__logo {
@@ -63,23 +63,25 @@ a {
   .header__nombreylogo {
     padding: 0px; } }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   .header__nombre {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    margin: 0px; }
   .header__logo {
     display: none; } }
 
-@media screen and (max-width: 424px) {
+@media screen and (min-width: 425px) {
   .header__nombre {
     font-size: 2.7rem; }
   .header__logo {
     display: none; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .header__nombre {
     font-size: 5rem; }
   .header__logo {
-    margin: 0px; } }
+    display: inline-block;
+    margin: 0px 10px 0px 0px; } }
 
 @keyframes fluido {
   0% {
@@ -246,6 +248,20 @@ svg {
 @media screen and (max-width: 425px) {
   .icon {
     margin: 10px 5px; } }
+
+.main__imagenC {
+  display: flex;
+  background-image: url(../Assets/ContactoImagen.jpg);
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  font-size: 2.5rem;
+  flex-direction: column;
+  padding: 80px; }
 
 .main__imagen {
   position: relative;
