@@ -1,0 +1,92 @@
+.main__imagen {
+    margin-top: 60px;
+    position: relative;
+    display: flex;
+    background-image: url(../Assets/Fondoindex.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 2.5rem;
+        & span {
+            margin: 50px;
+        }
+}
+.main__frase {
+    display: flex;
+    background-color: white;
+    padding: 40px 40px;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    &--grande {
+        font-size: 2rem;
+    }
+    &--italica {
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: 300;
+    }
+}
+.main__secciones {
+    display: flex;
+    height: 700px;
+    padding: 100px 100px;
+    flex-direction: column;
+    background-image: url(../Assets/FondoSeccionesIndex.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: left;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    & a {
+        color: white;
+        font-size: 2.7rem;
+        font-family: 'Teko', sans-serif;
+        border-left: 2px solid white;
+        padding: 5px 15px;
+        transition: all 0.5s;
+        &:hover {
+            background: white;
+            color: black;
+        }
+    }
+}  
+
+
+@media screen and (max-width:768px) {
+    
+    
+    .main__frase--grande{
+    font-size: 1rem;
+    }
+    .main__frase--italica {
+    font-size: 1rem;
+    }
+    .main__secciones {
+    padding: 0px;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+    & a {
+    font-size: 1.5rem;
+    }
+    }
+    .main__imagen {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-size: 200%;
+    & span {
+    font-size: 1.5rem;
+    margin: 5px;
+    }
+    }
+    .footer__frase {
+        font-size: 0.8rem;
+    }
+}
