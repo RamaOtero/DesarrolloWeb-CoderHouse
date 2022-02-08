@@ -1,0 +1,91 @@
+@import "./variables";
+@import "./mapa";
+@import "./mixins-responsive";
+.footer__frase {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: $blanco;
+    font-size: 1rem;
+    font-family: 'Kanit', sans-serif;;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0px;
+}
+.footer__iconos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+    &:hover {
+        background-color: #e60073;
+        box-shadow:  0 0 20px #e60073 ;
+        &:nth-child(2) {
+            background-color: #1877f2;
+            box-shadow:  0 0 20px #1877f2;
+        }
+        &:nth-child(3) {
+            background-color: #25d366;
+            box-shadow: 0 0 20px #25d366 ;
+        }
+        
+        &:nth-child(4) {
+            background-color: #1da1f2;
+            box-shadow:  0 0 20px #1da1f2 ;
+        }
+        & circle {
+            stroke-dasharray: 220;
+        }
+    }
+    & i {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 1.7rem;
+    }
+}
+svg {
+    height: 80px;
+    width: 80px;
+    & circle {
+        stroke-dasharray: 150;
+        transition: all .8s ease-in-out;
+    }
+}
+@media screen and (max-width:320px) {  
+    svg {
+        display: none;
+    }
+    .icon {
+        width:20px ;
+        height: 20px;
+    }
+}
+@media screen and (max-width:375px) {  
+    svg {
+        display: none;
+    }
+    .icon {
+        width:20px ;
+        height: 20px;
+    }
+}
+@media screen and (max-width:425px) {  
+    .icon {
+        margin: 10px 5px;
+    } 
+}

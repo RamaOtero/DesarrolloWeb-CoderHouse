@@ -1,0 +1,14 @@
+.main__imagenC {
+    display: flex;
+    background-image: url(../Assets/ContactoImagen.jpg);
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    color:white;
+    font-size: 2.5rem;
+    flex-direction: column;
+    padding: 80px;
+    }

@@ -1,0 +1,43 @@
+.main__imagenS {
+    margin-top: 50px;
+    display: flex;
+    background-image: url(../Assets/fotoarmado.jpg);
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    font-size: 2.5rem;
+    flex-direction: column;
+    padding: 50px 80px;
+    }
+    .main__trabajosS {
+        background-color: black;
+        display: grid;
+        grid-template-columns: 75vw;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+        row-gap: 40px;
+        padding: 30px 0px;
+        & div p {
+            color: white;
+            font-size: 1.2rem;
+            border-left: 2px solid rgb(33, 33, 109);
+            padding-left: 10px;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+    
+        .main__imagen {
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            & span {
+                font-size: 1.5rem;
+                margin: 5px;
+            }
+        }
+        }
