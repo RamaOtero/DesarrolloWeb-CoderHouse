@@ -1,4 +1,5 @@
 .main__imagenS {
+    margin-top: 50px;
     display: flex;
     background-image: url(../Assets/fotoarmado.jpg);
     background-size: 200%;
@@ -10,7 +11,7 @@
     color: black;
     font-size: 2.5rem;
     flex-direction: column;
-    padding: 80px;
+    padding: 50px 80px;
     }
     .main__trabajosS {
         background-color: black;

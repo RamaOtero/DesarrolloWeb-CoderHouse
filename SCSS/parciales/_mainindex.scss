@@ -1,5 +1,4 @@
 .main__imagen {
-    margin-top: 60px;
     position: relative;
     display: flex;
     background-image: url(../Assets/Fondoindex.jpg);
@@ -16,9 +15,10 @@
         }
 }
 .main__frase {
+    margin-top: 65px;
     display: flex;
     background-color: white;
-    padding: 40px 40px;
+    padding: 20px 40px;
     flex-direction: column;
     align-items: center;
     font-family: 'Kanit', sans-serif;

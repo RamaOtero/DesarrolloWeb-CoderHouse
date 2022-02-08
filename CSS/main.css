@@ -112,80 +112,6 @@ ul.show {
     .nav__items li {
       margin: 5px 0 0 0; } }
 
-.header {
-  background-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; }
-  .header__logoynombre {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap-reverse; }
-  .header__logo {
-    max-width: 100%;
-    width: 100px;
-    margin: 5px 20px 5px 0px; }
-  .header__nombre {
-    font-family: 'Orbitron', sans-serif;
-    margin-left: 20px;
-    font-size: 6rem;
-    font-weight: 900;
-    animation: fluido 30s ease-in-out infinite;
-    background: #020024;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(255, 255, 255, 0.65) 25%, black 50%, rgba(255, 255, 255, 0.653099) 75%, rgba(255, 255, 255, 0) 100%);
-    background-size: 600%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; }
-  .header__list {
-    display: flex;
-    padding: 0px 50px 20px 0px;
-    font-family: 'Teko', sans-serif;
-    flex-wrap: wrap; }
-  .header__item {
-    margin: 0px 7px; }
-    .header__item span {
-      color: white;
-      font-size: 1.8rem;
-      padding: 4px 10px 0px 10px;
-      border-bottom: 1px solid white;
-      transition: all 0.5s; }
-      .header__item span:hover {
-        background-color: white;
-        color: black; }
-  .header__servicios {
-    display: none; }
-
-@media screen and (min-width: 320px) {
-  .header__nombre {
-    font-size: 2rem; }
-  .header__logo {
-    display: none; }
-  .header__nombreylogo {
-    padding: 0px; } }
-
-@media screen and (min-width: 375px) {
-  .header__nombre {
-    font-size: 2.5rem;
-    margin: 0px; }
-  .header__logo {
-    display: none; } }
-
-@media screen and (min-width: 425px) {
-  .header__nombre {
-    font-size: 2.7rem; }
-  .header__logo {
-    display: none; } }
-
-@media screen and (min-width: 768px) {
-  .header__nombre {
-    font-size: 5rem; }
-  .header__logo {
-    display: inline-block;
-    margin: 0px 10px 0px 0px; } }
-
 @keyframes fluido {
   0% {
     background-position: 0 50%; }
@@ -259,11 +185,11 @@ ul.show {
   .main__form div {
     position: absolute;
     bottom: -25px;
-    right: -20px;
+    right: -15px;
     background: black;
     color: white;
     width: 280px;
-    padding: 16px 4px 16px 0;
+    padding: 16px 0px 16px 0;
     border-radius: 6px;
     font-size: 13px;
     box-shadow: 10px 10px 40px -14px #000; }
@@ -373,22 +299,43 @@ svg {
   background-size: 200%;
   background-position: center;
   background-repeat: no-repeat;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Bebas Neue', cursive;
+  margin-top: 50px;
+  align-items: flex-start;
+  font-family: 'Open Sans', sans-serif;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   flex-direction: column;
   padding: 80px; }
+  .main__imagenN--frase {
+    border-left: 5px solid #0e021b;
+    background-color: rgba(41, 6, 41, 0.507);
+    border-radius: 0px;
+    font-weight: 500;
+    padding: 0px 15px;
+    margin-bottom: 5px;
+    font-style: italic;
+    cursor: default;
+    color: #fff; }
+  .main__imagenN--grande {
+    margin-bottom: -0.1px;
+    font-size: 2.5rem;
+    background-color: rgba(41, 6, 41, 0.507);
+    color: white;
+    border-left: 5px solid #0e021b;
+    font-weight: 900;
+    font-style: italic;
+    padding: 0px 15px;
+    cursor: default; }
   .main__imagenN--btn {
-    border: 2px solid yellow;
+    border: 2px solid #0e021b;
+    display: inline-block;
     border-radius: 50px;
     padding: 1.5px 10px;
     font-size: 1.7rem;
     font-family: 'Teko', sans-serif;
     color: white; }
     .main__imagenN--btn:hover {
-      background-color: rgba(255, 251, 0, 0.479);
+      background-color: rgba(14, 2, 27, 0.733);
       color: white;
       transition: 0.5s; }
 
@@ -462,6 +409,7 @@ svg {
     padding: 10px; } }
 
 .main__imagenS {
+  margin-top: 50px;
   display: flex;
   background-image: url(../Assets/fotoarmado.jpg);
   background-size: 200%;
@@ -473,7 +421,7 @@ svg {
   color: black;
   font-size: 2.5rem;
   flex-direction: column;
-  padding: 80px; }
+  padding: 50px 80px; }
 
 .main__trabajosS {
   background-color: black;
@@ -499,7 +447,6 @@ svg {
       margin: 5px; } }
 
 .main__imagen {
-  margin-top: 60px;
   position: relative;
   display: flex;
   background-image: url(../Assets/Fondoindex.jpg);
@@ -515,9 +462,10 @@ svg {
     margin: 50px; }
 
 .main__frase {
+  margin-top: 65px;
   display: flex;
   background-color: white;
-  padding: 40px 40px;
+  padding: 20px 40px;
   flex-direction: column;
   align-items: center;
   font-family: 'Kanit', sans-serif; }
