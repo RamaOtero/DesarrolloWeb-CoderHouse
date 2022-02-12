@@ -476,6 +476,63 @@ svg {
     font-style: italic;
     font-weight: 300; }
 
+.main__seccionCartas {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0px; }
+  .main__seccionCartas .main__cartas {
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 30px; }
+    .main__seccionCartas .main__cartas:hover .main__cartasCaja {
+      transform: translateY(-50px);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(45deg, #b95ce4, #4f29cd); }
+    .main__seccionCartas .main__cartas:hover .main__cartasCaja .main__cartasContenido h2 {
+      color: rgba(0, 0, 0, 0.05); }
+    .main__seccionCartas .main__cartas:hover .main__cartasCaja .main__cartasContenido h3 {
+      font-size: 1.1em;
+      color: #fff;
+      z-index: 1;
+      transition: 0.5s; }
+    .main__seccionCartas .main__cartas:hover .main__cartasCaja .main__cartasContenido p {
+      color: #fff; }
+    .main__seccionCartas .main__cartasCaja {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      background: #ebf5fc;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s; }
+    .main__seccionCartas .main__cartasContenido {
+      padding: 20px;
+      text-align: center; }
+      .main__seccionCartas .main__cartasContenido h2 {
+        position: absolute;
+        top: -10px;
+        right: 30px;
+        font-size: 8em;
+        color: rgba(0, 0, 0, 0.05);
+        transition: 0.5s; }
+      .main__seccionCartas .main__cartasContenido p {
+        font-size: 1em;
+        font-weight: 300;
+        color: #777;
+        z-index: 1;
+        transition: 0.5s; }
+
 .main__secciones {
   display: flex;
   height: 700px;
