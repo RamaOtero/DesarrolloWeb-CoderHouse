@@ -486,14 +486,14 @@ svg {
   .main__seccionCartas .main__cartas {
     position: relative;
     min-width: 320px;
-    height: 440px;
+    height: 300px;
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     margin: 30px; }
     .main__seccionCartas .main__cartas:hover .main__cartasCaja {
       transform: translateY(-50px);
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-      background: linear-gradient(45deg, #b95ce4, #4f29cd); }
+      background: linear-gradient(0deg, #0e021b 25%, black 100%); }
     .main__seccionCartas .main__cartas:hover .main__cartasCaja .main__cartasContenido h2 {
       color: rgba(0, 0, 0, 0.05); }
     .main__seccionCartas .main__cartas:hover .main__cartasCaja .main__cartasContenido h3 {
@@ -509,7 +509,7 @@ svg {
       left: 20px;
       right: 20px;
       bottom: 20px;
-      background: #ebf5fc;
+      background: #ac76d83d;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
       border-radius: 15px;
       display: flex;
@@ -518,14 +518,16 @@ svg {
       transition: 0.5s; }
     .main__seccionCartas .main__cartasContenido {
       padding: 20px;
-      text-align: center; }
+      text-align: center;
+      justify-content: center; }
       .main__seccionCartas .main__cartasContenido h2 {
-        position: absolute;
-        top: -10px;
-        right: 30px;
-        font-size: 8em;
-        color: rgba(0, 0, 0, 0.05);
-        transition: 0.5s; }
+        margin-bottom: 20px;
+        font-size: 2.5em;
+        color: rgba(32, 5, 51, 0.692);
+        transition: 0.5s;
+        font-family: 'Open Sans', sans-serif;
+        font-style: italic;
+        font-weight: 200; }
       .main__seccionCartas .main__cartasContenido p {
         font-size: 1em;
         font-weight: 300;
