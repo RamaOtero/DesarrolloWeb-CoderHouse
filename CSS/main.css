@@ -394,14 +394,42 @@ svg {
     text-align: center; } }
 
 .main__gridP {
-  background-color: black;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  row-gap: 30px;
-  column-gap: 30px;
-  padding: 80px;
-  place-items: center; }
+  width: 100%;
+  max-width: 1200px;
+  height: 430;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto; }
+  .main__gridP .main__gridPCartas {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px black;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s; }
+    .main__gridP .main__gridPCartas img {
+      width: 330px;
+      height: 330px; }
+    .main__gridP .main__gridPCartas h4 {
+      font-family: 'Open Sans', sans-serif;
+      margin-top: 10px;
+      font-weight: 600;
+      font-style: italic; }
+    .main__gridP .main__gridPCartas p {
+      padding: 0 1rem;
+      font-size: 16px;
+      font-weight: 300; }
+    .main__gridP .main__gridPCartas:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 12px 16px black;
+      cursor: pointer; }
+
+.main__carrusel {
+  width: 100vw;
+  height: 100px; }
 
 @media screen and (max-width: 768px) {
   .main__gridP {
@@ -509,7 +537,7 @@ svg {
       left: 20px;
       right: 20px;
       bottom: 20px;
-      background: #ac76d83d;
+      background: #52515310;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
       border-radius: 15px;
       display: flex;
