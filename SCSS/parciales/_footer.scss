@@ -1,12 +1,10 @@
-@import "./variables";
-@import "./mapa";
 @import "./mixins-responsive";
 .footer__frase {
     display: flex;
     background-color: black;
     justify-content: center;
     align-items: center;
-    color: $blanco;
+    color: #fff;
     font-size: 1rem;
     font-family: 'Kanit', sans-serif;;
     font-style: italic;

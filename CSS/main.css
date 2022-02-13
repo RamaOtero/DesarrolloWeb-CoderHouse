@@ -103,7 +103,7 @@ ul.show {
         color: #fff;
         font-weight: bold; }
         .nav__items li a:hover {
-          color: #961d1d; } }
+          color: #350f44; } }
 
 @media screen and (max-width: 858px) and (orientation: landscape) {
   .nav__items {
@@ -209,7 +209,7 @@ ul.show {
   background-color: black;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #fff;
   font-size: 1rem;
   font-family: 'Kanit', sans-serif;
   font-style: italic;
@@ -387,6 +387,10 @@ svg {
         color: #777;
         z-index: 1;
         transition: 0.5s; }
+
+@media screen and (max-width: 768px) {
+  .main__imagenC span {
+    font-size: 1.5rem; } }
 
 .main__imagenN {
   display: flex;
