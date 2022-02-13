@@ -12,9 +12,10 @@
     flex-direction: column;
     padding: 80px;
     &--frase {
-        border-left: 5px solid rgb(14,2,27);
-        background-color: rgba(41, 6, 41, 0.507);
-        border-radius: 0px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-left: 5px solid rgb(58, 14, 87);
+        background-color: rgba(0, 0, 0, 0.507);
         font-weight: 500;
         padding: 0px 15px;
         margin-bottom: 5px;
@@ -23,24 +24,29 @@
         color: #fff;
     }
     &--grande {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
         margin-bottom: -0.1px;
         font-size: 2.5rem;
-        background-color: rgba(41, 6, 41, 0.507);
+        background-color: rgba(0, 0, 0, 0.432);
         color: rgb(255, 255, 255);
-        border-left: 5px solid rgb(14,2,27);
+        border-left: 5px solid rgb(58, 14, 87);
         font-weight: 900;
         font-style: italic;
         padding: 0px 15px;
         cursor: default;
+        margin-bottom: 5px;
     }
     &--btn {
+        margin-top: 10px;
         border: 2px solid rgb(14,2,27);
         display: inline-block;
         border-radius: 50px;
-        padding: 1.5px 10px;
+        padding: 2px 20px;
         font-size: 1.7rem;
         font-family:'Teko', sans-serif;
         color: white;
+        background-color: #000;
         &:hover {
             background-color: rgba(14, 2, 27, 0.733);
             color: white;
@@ -48,7 +54,7 @@
         }
     }
     }
-    .main_fraseN {
+    .main__fraseN {
         background-color: #000;
         display: flex;
         padding: 40px 40px;
@@ -69,7 +75,8 @@
        align-items: center;
        text-align: center;
        font-size: 1.35rem;
-       font-family: 'Kanit', sans-serif;
+       font-family: 'Open Sans', sans-serif;
+       font-weight: 500;
    } 
    .main__gridN {
        display: grid;
@@ -89,16 +96,21 @@
    @media screen and (max-width:768px) {
     
     .main__imagenN {
+        margin-top: 65px;
         padding: 10px;
         justify-content: center;
         align-items: center;
+        &--btn {
+            font-size: 1rem;
+            background-color: #000;
+        }
         & span {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin: 5px;
         }
     }
     .main__fraseN span {
-        font-size: 20px;
+        font-size: 1.5rem;
     }
     .main__gridN {
         grid-template-columns: auto;

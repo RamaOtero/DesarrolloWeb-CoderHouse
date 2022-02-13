@@ -11,7 +11,7 @@ a {
 
 .nav {
   top: 0px;
-  z-index: 2;
+  z-index: 5;
   position: fixed;
   background: #0e021b;
   background: linear-gradient(0deg, #0e021b 25%, black 100%);
@@ -49,7 +49,7 @@ a {
       font-family: 'Rubik', sans-serif;
       padding: 7px 12px;
       font-size: 1rem;
-      font-weight: 600;
+      font-weight: 500;
       display: block;
       text-transform: uppercase;
       color: #fff; }
@@ -80,14 +80,14 @@ ul.show {
     padding-left: 35px; }
   .nav {
     height: 65px;
-    z-index: 1; }
+    z-index: 5; }
   .btn__menu {
     display: inline-flex; }
   .nav__items {
     padding: 0px;
     position: fixed;
     width: 100vw;
-    height: calc(100% - 130px);
+    height: calc(100% - 100px);
     background: #414141;
     top: -100vh;
     text-align: center;
@@ -108,7 +108,7 @@ ul.show {
 @media screen and (max-width: 858px) and (orientation: landscape) {
   .nav__items {
     overflow: scroll;
-    height: calc(100% - 290px); }
+    height: calc(100% - 380px); }
     .nav__items li {
       margin: 5px 0 0 0; } }
 
@@ -307,9 +307,10 @@ svg {
   flex-direction: column;
   padding: 80px; }
   .main__imagenN--frase {
-    border-left: 5px solid #0e021b;
-    background-color: rgba(41, 6, 41, 0.507);
-    border-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 5px solid #3a0e57;
+    background-color: rgba(0, 0, 0, 0.507);
     font-weight: 500;
     padding: 0px 15px;
     margin-bottom: 5px;
@@ -317,29 +318,34 @@ svg {
     cursor: default;
     color: #fff; }
   .main__imagenN--grande {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     margin-bottom: -0.1px;
     font-size: 2.5rem;
-    background-color: rgba(41, 6, 41, 0.507);
+    background-color: rgba(0, 0, 0, 0.432);
     color: white;
-    border-left: 5px solid #0e021b;
+    border-left: 5px solid #3a0e57;
     font-weight: 900;
     font-style: italic;
     padding: 0px 15px;
-    cursor: default; }
+    cursor: default;
+    margin-bottom: 5px; }
   .main__imagenN--btn {
+    margin-top: 10px;
     border: 2px solid #0e021b;
     display: inline-block;
     border-radius: 50px;
-    padding: 1.5px 10px;
+    padding: 2px 20px;
     font-size: 1.7rem;
     font-family: 'Teko', sans-serif;
-    color: white; }
+    color: white;
+    background-color: #000; }
     .main__imagenN--btn:hover {
       background-color: rgba(14, 2, 27, 0.733);
       color: white;
       transition: 0.5s; }
 
-.main_fraseN {
+.main__fraseN {
   background-color: #000;
   display: flex;
   padding: 40px 40px;
@@ -360,7 +366,8 @@ svg {
   align-items: center;
   text-align: center;
   font-size: 1.35rem;
-  font-family: 'Kanit', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500; }
 
 .main__gridN {
   display: grid;
@@ -378,14 +385,18 @@ svg {
 
 @media screen and (max-width: 768px) {
   .main__imagenN {
+    margin-top: 65px;
     padding: 10px;
     justify-content: center;
     align-items: center; }
+    .main__imagenN--btn {
+      font-size: 1rem;
+      background-color: #000; }
     .main__imagenN span {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       margin: 5px; }
   .main__fraseN span {
-    font-size: 20px; }
+    font-size: 1.5rem; }
   .main__gridN {
     grid-template-columns: auto; }
   .main__textoN {
@@ -427,14 +438,30 @@ svg {
       box-shadow: 0 12px 16px black;
       cursor: pointer; }
 
-.main__carrusel {
-  width: 100vw;
-  height: 100px; }
+.carousel-control-next {
+  position: absolute;
+  z-index: 0; }
+
+.carousel-control-prev {
+  position: absolute;
+  z-index: 0; }
+
+.carousel-indicators {
+  position: absolute;
+  z-index: 2; }
+
+.carousel-item {
+  height: 200px;
+  margin-top: 30px; }
+  .carousel-item h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2rem; }
 
 @media screen and (max-width: 768px) {
-  .main__gridP {
-    grid-template-columns: 1fr;
-    padding: 10px; } }
+  .carousel-indicators {
+    z-index: 1; } }
 
 .main__imagenS {
   margin-top: 50px;

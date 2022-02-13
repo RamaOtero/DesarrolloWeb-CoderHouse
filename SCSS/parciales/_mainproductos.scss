@@ -38,13 +38,30 @@
         }
     }
 }
-.main__carrusel {
-    width: 100vw;
-    height: 100px;
+.carousel-control-next {
+    position: absolute;
+    z-index: 0;
 }
-@media screen and (max-width:768px) {
-    .main__gridP {
-        grid-template-columns: 1fr;
-        padding: 10px;
+.carousel-control-prev {
+    position: absolute;
+    z-index: 0;
+}
+.carousel-indicators {
+    position: absolute;
+    z-index: 2;
+}
+.carousel-item {
+    height: 200px;
+    margin-top: 30px;
+    & h5 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 2rem;
     }
+}
+@media screen and (max-width: 768px) {
+    .carousel-indicators {
+        z-index: 1;
     }
+}

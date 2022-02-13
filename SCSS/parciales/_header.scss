@@ -4,7 +4,7 @@
 
 .nav {
     top: 0px;
-    z-index:2;
+    z-index:5;
     position: fixed;
     background: rgb(14,2,27);
     background: linear-gradient(0deg, rgba(14,2,27,1) 25%, rgba(0,0,0,1) 100%);
@@ -43,7 +43,7 @@
             font-family: 'Rubik', sans-serif;
             padding: 7px 12px;
             font-size: 1rem;
-            font-weight: 600;
+            font-weight: 500;
             display: block;
             text-transform: uppercase;
             color: #fff;
@@ -85,7 +85,7 @@ ul.show {
     }
     .nav {
         height: 65px;
-        z-index:1;
+        z-index:5;
     }
     .btn__menu {
         display: inline-flex;
@@ -94,7 +94,7 @@ ul.show {
         padding: 0px;
         position: fixed;
         width: 100vw;
-        height: calc(100% - 130px);
+        height: calc(100% - 100px);
         background: #414141;
         top: -100vh;
         text-align: center;
@@ -121,7 +121,7 @@ ul.show {
 @media screen and (max-width: 858px) and (orientation: landscape) {
     .nav__items {
         overflow: scroll;
-        height: calc(100% - 290px);
+        height: calc(100% - 380px);
         & li {
             margin: 5px 0 0 0;
         }
