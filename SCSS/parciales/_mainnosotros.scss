@@ -86,11 +86,14 @@
        justify-content: space-around;
        gap: 20px;
        padding: 40px;
+       & div {
+        border-left: 2px solid yellow;
+        padding-left: 10px;
+       }
        & div span {
            color: white;
            font-size: 1.2rem;
-           border-left: 2px solid yellow;
-           padding-left: 10px;
+           
        }
    }
    @media screen and (max-width:768px) {
